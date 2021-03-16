@@ -3,7 +3,7 @@ import torch, torch.nn as nn
 import torch.nn.functional as F
 from torch.autograd import Variable
 import numpy as np
-class AttentionalLinearGRU(nn.Module):
+class DPSR(nn.Module):
     
     def __init__(self, n_users,n_items, emb_size=1024, hidden_units=1024,output_dropout = 0.8,input_dropout = 0.6,device = 'cpu',
                     k = 4,w = 32,n = 10):
